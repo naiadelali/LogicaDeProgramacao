@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lógica de Programação</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+              <blockquote>
+                  1. Faça um algoritmo que receba dois números e exiba o resultado da sua soma.
+              </blockquote>
+                <code>
+                    var num1, num2 inteiro;
+                    var soma real;<br>
+
+                    Escreva("Digite o primeiro numero");<br>
+                    leia(num1);<br>
+
+                    Escreva("Digite outro valor");<br>
+                    leia(num2);<br>
+
+                    soma = num1+num2;<br>
+                    Escreva("A soma dos dois valores é: "+soma);<br>
+                </code>
+               <button class="btn btn-primary" onclick="exercicio1()" >Clique Aqui</button>
+
+                <blockquote>
+                    2. Faça um algoritmo que receba dois números e ao final mostre a soma, subtração, multiplicação e a divisão dos
+                    números lidos
+                </blockquote>
+
+                <code>
+                    var num1, num2 inteiro;<br>
+                    var soma, subtracao, divicao, multiplicacao real;<br>
+
+                    Escreva("Digite o primeiro numero");<br>
+                    leia(num1);<br>
+
+                    Escreva("Digite outro valor");<br>
+                    leia(num2);<br>
+
+                    soma = num1+num2;<br>
+                    subtracao = num1 - num2;<br>
+                    divicao = num1 div num2;<br>
+                    multiplicacao = num1 x num2;<br>
+
+                    Escreva("A soma dos dois valores é: "+soma);<br>
+                    Escreva("A subtracao dos dois valores é: "+subtracao);<br>
+                    Escreva("A divisao dos dois valores é: "+divisao);<br>
+                    Escreva("A multiplicacao dos dois valores é: "+multiplicacao);<br>
+                </code>
+
+                <button class="btn btn-primary" onclick="exercicio2()" >Clique Aqui</button>
+
+                <blockquote>
+                    3. Escrever um algoritmo para determinar o consumo médio de um automóvel sendo fornecida a distância total
+                    percorrida pelo automóvel e o total de combustível gasto.
+                </blockquote>
+                <code>
+                    var consumoMedio=0, totalDistancia=0, totalCombustivel=0 real;<br>
+
+                    Escreva("Informe a distancia total percorrida");<br>
+                    leia(totalDistancia);<br>
+                    Escreva("Informe o total de combustivel gasto");<br>
+                    leia(totalCombustivel);<br>
+
+                    consumoMedio= totalDistancia/totalCombustivel;<br>
+
+                    Escreva("O consumo medio e de : "+consumoMedio);<br>
+                </code>
+                <button class="btn btn-primary" onclick="exercicio3()" >Clique Aqui</button>
+                <blockquote>
+                    4. Escrever um algoritmo que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por ele no
+                    mês (em dinheiro). Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar o
+                    seu nome, o salário fixo e salário no final do mês.
+                </blockquote>
+                <code>
+                    var nomeVendedor string;<br>
+                    var salarioFixo, totalVendas, salarioTotal real;<br>
+
+                    Escreva("Informe o nome do vendedor");<br>
+                    leia(nomeVendedor);<br>
+
+                    Escreva("Informe o salario fixo do vendedor");<br>
+                    leia(salarioFixo);<br>
+
+                    Escreva("Informe o total de vendas");<br>
+                    leia(totalVendas);<br>
+
+                    salarioTotal = (totalVendas * 0.15) + salarioFixo;<br>
+
+                    Escreva("O vendedor "+nomeVendedor+" possui um salario fixo de R$"+salarioFixo+" e um salario final de R$"+salarioTotal);<br>
+
+                </code>
+                <button class="btn btn-primary" onclick="exercicio4()" >Clique Aqui</button>
+                <blockquote>
+                    5. Escrever um algoritmo que leia o nome de um aluno e as notas das três provas que ele obteve no semestre. No final
+                    informar o nome do aluno e a sua média (aritmética).
+                </blockquote>
+                <code>
+                    var nota1, nota2, nota3, media real;<br>
+                    var nomeAluno string; <br>
+                    Escreva("Informe o nome do aluno");<br>
+                    leia(nomeAluno);<br>
+                    Escreva("Informe a primeira nota");<br>
+                    leia(nota1);<br>
+                    Escreva("Informe a segunda nota");<br>
+                    leia(nota2);<br>
+                    Escreva("Informe a terceira nota");<br>
+                    leia(nota3);<br>
+
+                    media= (nota1+nota2+nota3)/3;<br>
+
+                    Escreva("O aluno "+nomeAluno+" teve uma media de"+media); <br>
+
+                </code>
+                <button class="btn btn-primary" onclick="exercicio5()" >Clique Aqui</button>
+
+                <blockquote>
+                    6. Ler dois valores para as variáveis A e B, e efetuar as trocas dos valores de forma que a variável A passe a possuir o
+                    valor da variável B e a variável B passe a possuir o valor da variável A. Apresentar os valores trocados.
+
+                </blockquote>
+                <code>
+                    var A,B,AUX inteiro;<br>
+
+                    Escreva("Informe o valor de A");<br>
+                    leia(A);<br>
+                    Escreva("Informe o valor de B");<br>
+                    leia(B);<br>
+
+                    AUX = A;<br>
+                    A = B;<br>
+                    B = AUX;<br>
+
+                    Escreva("O valor de A eh "+A+", o valor de B eh "+B);<br>
+                </code>
+                <button class="btn btn-primary" onclick="exercicio6()" >Clique Aqui</button>
+                <blockquote>
+                    7. Ler uma temperatura em graus Celsius e apresentá-la convertida em graus Fahrenheit. A fórmula de conversão é:
+                    F=(9*C+160) / 5, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius
+                </blockquote>
+                <code>
+                    var C, F real;<br>
+
+                    Escreva("Informe uma temperatura em graus Celsius");<br>
+                    leia(C);<br>
+
+                    F = (9*C+160) / 5;<br>
+
+                    Escreva("A temperatura em Fahrenheit eh de "+F);<br>
+
+                </code>
+                <button class="btn btn-primary" onclick="exercicio7()" >Clique Aqui</button>
+                <blockquote>
+                    8. Elaborar um algoritmo que efetue a apresentação do valor da conversão em real (R$) de um valor lido em dólar
+                    (US$). O algoritmo deverá solicitar o valor da cotação do dólar e também a quantidade de dólares disponíveis com o
+                    usuário.
+
+                </blockquote>
+                <code>
+                    var cotacao, valorDolar, convercaoReal real;<br>
+
+                    Escreva("Informe a cotacao do dolar");<br>
+                    leia(cotacao);<br>
+                    Escreva("Informe a quantia em dolar");<br>
+                    leia(valorDolar);<br>
+
+                    convercaoReal = valorDolar * cotacao;<br>
+
+                    Escreva("O valor convertido em real eh "+convercaoReal);<br>
+
+                </code>
+                <button class="btn btn-primary" onclick="exercicio8()" >Clique Aqui</button>
+                <blockquote>
+                    9. Faça um algoritmo que receba um valor que foi depositado e exiba o valor com rendimento após um mês.
+                    <br>- Considere fixo o juro da poupança em 0,70% a. m.
+
+                </blockquote>
+                <code>
+                    var deposito, rendimento real;<br>
+                    Escreva("Informe o valor a ser depositado");<br>
+                    leia(deposito);<br>
+                    rendimento = (valor *0.70) + valor;<br>
+                    Escreva("O rendimento de um mes eh "+rendimento)<br>
+
+                </code>
+                <button class="btn btn-primary" onclick="exercicio9()" >Clique Aqui</button>
+                <blockquote>
+                    10. A Loja Mamão com Açúcar está vendendo seus produtos em 5 (cinco) prestações sem juros. Faça um algoritmo que
+                    receba um valor de uma compra e mostre o valor das prestações
+                </blockquote>
+                <code>
+                    var compra, prestacores real;<br>
+                    Escreva("Informe o valor da compra");<br>
+                    leia(compra);<br>
+
+                    prestacoes = compra / 5;<br>
+
+                    Escreva("O valor das prestacoes eh "+prestacoes);<br>
+                </code>
+                <button class="btn btn-primary" onclick="exercicio10()" >Clique Aqui</button>
+                <blockquote>
+                    11. Faça um algoritmo que receba o preço de custo de um produto e mostre o valor de venda. Sabe-se que o preço de
+                    custo receberá um acréscimo de acordo com um percentual informado pelo usuário.
+                </blockquote>
+                <code>
+                    var custo, venda, porcentagem real;<br>
+
+                    Escreva("Informe o valor de custo do produto");<br>
+                    leia(custo);<br>
+                    Escreva("Informe a porcentagem de venda sobre o produto");<br>
+                    leia(porcentagem);<br>
+                    venda = (custo*porcentagem)+custo;<br>
+
+                    Escreva("O valor de venda eh "+venda);<br>
+
+                </code>
+                <button class="btn btn-primary" onclick="exercicio11()" >Clique Aqui</button>
+
+
+                <blockquote>
+                    12. O custo ao consumidor de um carro novo é a soma do custo de fábrica com a percentagem do distribuidor e dos
+                    impostos (aplicados, primeiro os impostos sobre o custo de fábrica, e depois a percentagem do distribuidor sobre o
+                    resultado). Supondo que a percentagem do distribuidor seja de 28% e os impostos 45%. Escrever um algoritmo que
+                    leia o custo de fábrica de um carro e informe o custo ao consumidor do mesmo.
+                </blockquote>
+                <code>
+                    var custoFabrica=0, imposto = 45, percDistribuidor = 28, resultado=0, custoConsumidor=0 real;<br>
+
+                    Escreva("Informe o custo de fabrica");<br>
+                    leia(custoFabrica);<br>
+
+                    resultado = (custoFabrica * (imposto /100)) + custoFabrica;<br>
+
+                    custoConsumidor= (resultado * (percDistribuidor / 100)) +resultado;<br>
+
+                    Escreva("O custo ao consumidor eh " +custoConsumidor);<br>
+
+                </code>
+                <button class="btn btn-primary" onclick="exercicio12()" >Clique Aqui</button>
+
+
+                <blockquote>
+                    13. Faça um algoritmo que receba um número e mostre uma mensagem caso este número seja maior que 10.
+                </blockquote>
+                <code>
+                    var numero int;<br>
+
+                    Escreva("Informe um numero");<br>
+                    leia(numero);<br>
+
+                    SE numeo > 10 ENTAO<br>
+
+                         Escreva("O numero eh maior que 10");<br>
+                    FIM SE <br>
+
+                </code>
+                <button class="btn btn-primary" onclick="exercicio13()" >Clique Aqui</button>
+
+
+                <blockquote>
+                    14. Escrever um algoritmo que leia dois valores inteiro distintos e informe qual é o maior.
+
+                </blockquote>
+                <code>
+                    var num1, num2, maior=0 int;<br>
+
+                    Escreva("Informe um numero");<br>
+                    leia(num1);<br>
+
+                    Escreva("Informe outro numero");<br>
+                    leia(num2);<br>
+                    SE num1 = num2 ENTAO<br>
+                        Escreva("Os dois são iguais");<br>
+                    SE num1>num2 ENTAO<br>
+                        maior= num1;<br>
+
+                    FIM SE<br>
+                   SENAO<br>
+                    maior  = num2;<br>
+                   FIM SENAO<br>
+
+                    Escreva("O numero maior eh "+maior);<br>
+
+
+                </code>
+                <button class="btn btn-primary" onclick="exercicio14()" >Clique Aqui</button>
+
+
+                <blockquote>
+                    15. Faça um algoritmo que receba um número e diga se este número está no intervalo entre 100 e 200
+                </blockquote>
+                <code>
+                    var numero int;<br>
+
+                    Escreva("Informe um numero");<br>
+                    leia(numero);<br>
+
+                    SE numero >= 100 E numero <=200 ENTAO <br>
+                    Escreva("O numero esta no intervalor entre 100 e 200");<br>
+                    FIM SE<br>
+                </code>
+                <button class="btn btn-primary" onclick="exercicio15()" >Clique Aqui</button>
+
+
+                <blockquote>
+                    16. Escrever um algoritmo que leia o nome e as três notas obtidas por um aluno durante o semestre. Calcular a sua
+                    média (aritmética), informar o nome e sua menção aprovado (media >= 7), Reprovado (media <= 5) e Recuperação
+                    (media entre 5.1 a 6.9).
+
+                </blockquote>
+                <code>
+                    var nome string; <br>
+                    var nota1, nota2,nota3, media real; <br>
+
+                    Escreva("Informe o nome do aluno");<br>
+                    leia(nome);<br>
+
+                    Escreva("Informe a primeira nota");<br>
+                    leia(nota1);<br>
+
+                    Escreva("Informe a segunda nota");<br>
+                    leia(nota2);<br>
+
+                    Escreva("Informe a terceira nota");<br>
+                    leia(nota3);<br>
+
+                    media = (nota1+nota2+nota3)/3;<br>
+
+                    SE media >=7 ENTAO<br>
+                    Escreva("O aluno "+nome+" foi aprovado!");<br>
+                    FIM SE<br><br>
+
+                    SE media <=5 ENTAO<br>
+                    Escreva("O aluno "+nome+" foi reprovado!");<br>
+                    FIM SE <br><br>
+
+                    SE media >=5.1 E media <=6.9 ENTAO <br>
+                    Escreva("O aluno "+nome+" esta de recuperacao");<br>
+                    FIM SE<br>
+
+
+
+
+                </code>
+                <button class="btn btn-primary" onclick="exercicio16()" >Clique Aqui</button>
+
+
+                <blockquote>
+                    17. Ler 80 números e ao final informar quantos número(s) est(á)ão no intervalo entre 10 (inclusive) e 150 (inclusive).
+
+
+                </blockquote>
+                <code>
+                    var contador=0, numero int;<br>
+                    PARA 1 ATÉ 80 PASSO 1<br>
+                    Escreva("Informe um numero");<br>
+                    leia(numero);<br>
+
+                    SE numero >=10 E numero<=150 ENTAO<br>
+                    contador = contador+1;<br>
+                    FIM SE<br>
+                    FIM PARA <br>
+                    Escreva("Ao total, foram digitados"+contador+"números no intervalo entre 10 e 150");<br>
+
+
+                </code>
+                <button class="btn btn-primary" onclick="exercicio17()" >Clique Aqui</button>
+
+
+                <blockquote>
+                    18. Faça um algoritmo que receba a idade de 75 pessoas e mostre mensagem informando “maior de idade” e “menor de
+                    idade” para cada pessoa. Considere a idade a partir de 18 anos como maior de idade.
+                </blockquote>
+                <code>
+                    var idade=0 int;<br>
+
+                    PARA 1 ATE 75 PASSO 1 FACA<br>
+                    Escreva("Informe a idade");<br>
+                    leia(idade);<br><br>
+
+                    SE idade => 18 ENTAO<br>
+                    Escreva("Voce eh maior de idade");<br>
+                    FIM SE<br><br>
+
+                    SE idade < 18 ENTAO <br>
+                    Escreva("Voce eh menor de idade");<br>
+                    FIM SE<br>
+
+                    FIM PARA<br><br>
+
+
+
+                </code>
+                <button class="btn btn-primary" onclick="exercicio18()" >Clique Aqui</button>
+
+
+                <blockquote>
+                    19. Escrever um algoritmo que leia o nome e o sexo de 56 pessoas e informe o nome e se ela é homem ou mulher. No
+                    final informe total de homens e de mulheres.
+                </blockquote>
+                <code>
+                    var sexo, contMulher=0, contHomem=0 int;<br>
+
+                    PARA 1 ATE 56 FACA<br>
+                    Escreva("Informe o sexo: "1" se for mulher e "2" se for homem");<br>
+                    leia(sexo);<br><br>
+
+                    escolha sexo<br>
+                    caso 1
+                    contMulher = contMulher +1;<br>
+                    Escreva("Voce eh uma mulher");<br>
+                    caso 2
+                    contHomem = contHomem +1;<br>
+                    Escreva("Voce eh um homem");<br>
+                    outrocaso
+                    escreval("Sexo só pode ser 1 ou 2!")
+                    fimescolha
+
+                    FIM PARA<br><br>
+
+                    Escreva("Total mulheres: "+contMulher+" Total Homens: "+contHomem);<br>
+
+
+
+                </code>
+                <button class="btn btn-primary" onclick="exercicio19()" >Clique Aqui</button>
+
+
+                <blockquote>
+                    20. A concessionária de veículos “CARANGO VELHO” está vendendo os seus veículos com desconto. Faça um
+                    algoritmo que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente de vários carros. O desconto
+                    deverá ser calculado de acordo com o ano do veículo. Até 2000 - 12% e acima de 2000 - 7%. O sistema deverá
+                    perguntar se deseja continuar calculando desconto até que a resposta seja: “(N) Não” . Informar total de carros com
+                    ano até 2000 e total geral
+                </blockquote>
+                <code>
+                    var anoCarro, custoFabrica, custoConsumidor=0, resposta='S',contador=0; <br><br>
+
+                    ENQUANTO(resposta = 'S') FACA<br>
+                    Escreva("Informe o ano do veiculo");<br>
+                    leia(anoCarro);<br><br>
+                    Escreva("Informe o valor do carro");<br>
+                    leia(custoFabrica);<br>
+                    SE anoCarro <= 2000 ENTAO<br>
+                    contador = contador +1;<br>
+                    custoConsumidor = custoConsumidor + (custoFabrica - (custoFabrica * 0.12));<br>
+                    FIM SE <br><br>
+
+                    SENAO<br>
+                    custoConsumidor = custoConsumidor + (custoFabrica -(custoFabrica * 0.07 ));<br><br>
+                    FIM SENAO<br>
+
+                    Escreva("Deseja continuar calculando o desconto ?[S] - sim \n [N] - nao");<br>
+                    leia(resposta);<br>
+                    FIM ENQUANTO<br><br>
+
+                    Escreva("O total de carros com o ano ateh 2000 eh "+ contador+ " e o custo a pagar eh "+ custoConsumidor);<br>
+
+                </code>
+                <button class="btn btn-primary" onclick="exercicio20()" >Clique Aqui</button>
+
+
+                <blockquote>
+                    21. Escrever um algoritmo que leia os dados de “N” pessoas (nome, sexo, idade e saúde) e informe se está apta ou não
+                    para cumprir o serviço militar obrigatório. Informe os totais.
+                </blockquote>
+                <code>
+                    var totalApta=0, totsl=0, idade integer;<br>
+                    var nome, saude, resposta='S' varchar ;<br>
+                    <br>
+                    FACA<br>
+                    total = total+1;
+                    Escreva("Informe o nome");<br>
+                    leia(nome);<br>
+                    Escreva("Informe o seu sexo: [F] para mulher e [M] para homem");<br>
+                    leia(sexo);<br>
+                    Escreva("Como eh sua saude: [B] para boa e [R] para ruim");<br>
+                    leia(saude);<br>
+                    Escreva("Informe sua idade");<br>
+                    leia(idade);<br>
+
+                    SE saude == 'B' E idade >=18 ENTAO<br>
+                    Escreva(nome + " esta apto para cumprir o servico militar");<br>
+                    totalApta = totalApta +1;<br>
+                    FIM SE<br>
+                    SENAO <br>
+                    Escreva(nome+ " nao esta apto para cumprir o servico militar");<br>
+
+
+                    Escreva("Deseja continuar? [S] - sim  [N] - Nao" );<br>
+
+
+                    ENQUANTO RESPOSTA <> 'N'<br>
+
+                    Escreva("O total de pessoas aptas eh de "+totalApta+" e o total de  participantes foi de "+total+" para o servico militar");<br>
+
+                </code>
+                <button class="btn btn-primary" onclick="exercicio21()" >Clique Aqui</button>
+
+
+                <blockquote>
+                    22.  Faça um algoritmo que receba o preço de custo e o preço de venda de 5 produtos. Mostre como resultado se houve lucro, prejuízo ou empate para cada produto.
+                    Informe media de preço de custo e do preço de venda.
+
+                </blockquote>
+                <code>
+                    var precoCusto, precoVenda,mediaCusto=0,mediaVenda=0;<br>
+
+                    PARA i = 0 E i <=5 PASSO 1 FACA<br>
+                    Escreva("Informe o preco de custo do produto");<br>
+                    leia(precoCusto);<br>
+                    mediaCusto = mediaCusto +precoCusto;<br>
+                    Escreva("Informe o preco de venda do produto"):<br>
+                    leia(precoVenda);<br>
+                    mediaVenda= mediaVenda + precoVenda;<br>
+
+                    SE precoVenda > precoCusto ENTAO<br>
+                    Escreva("Houve lucro");<br>
+                    FIM SE <br><br>
+                    SE precoVenda < precoCusto ENTAO<br>
+                    Escreva("Houve prejuizo");<br>
+                    FIM SE <br><br>
+                    SE precoVenda  = PrecoCusto ENTAO<br>
+                    Escreva("Houve um empate");<br>
+                    SIM SE<br><br>
+                    FIM PARA<br><br>
+                    mediaCusto = mediaCusto/5;<br>
+                    mediaVenda = mediaVenda/5;<br>
+                    Escreva("Media de venda: "+mediaVenda+". Media de custo: "+mediaCusto);<br>
+
+
+                </code>
+                <button class="btn btn-primary" onclick="exercicio22()" >Clique Aqui</button>
+
+
+                <blockquote>
+
+                </blockquote>
+                <code></code>
+                <button class="btn btn-primary" onclick="exercicio23()" >Clique Aqui</button>
+
+
+                <blockquote>
+
+                </blockquote>
+                <code></code>
+                <button class="btn btn-primary" onclick="exercicio24()" >Clique Aqui</button>
+
+
+                <blockquote>
+
+                </blockquote>
+                <code></code>
+                <button class="btn btn-primary" onclick="exercicio25()" >Clique Aqui</button>
+
+
+                <blockquote>
+
+                </blockquote>
+                <code></code>
+                <button class="btn btn-primary" onclick="exercicio26()" >Clique Aqui</button>
+
+
+                <blockquote>
+
+                </blockquote>
+                <code></code>
+                <button class="btn btn-primary" onclick="exercicio27()" >Clique Aqui</button>
+
+
+                <blockquote>
+
+                </blockquote>
+                <code></code>
+                <button class="btn btn-primary" onclick="exercicio28()" >Clique Aqui</button>
+
+
+                <blockquote>
+
+                </blockquote>
+                <code></code>
+                <button class="btn btn-primary" onclick="exercicio29()" >Clique Aqui</button>
+
+
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/logica.js" ></script>
+</body>
+
+</html>
